@@ -1,0 +1,16 @@
+<form action="/dologin" accept-charset="UTF-8" method="post">
+<input name="utf8" value="✓" type="hidden">
+<%=token_tag nil%>
+  <div class="field">
+    <label for="username">Username</label><br>
+    <input name="username" id="user_username" type="text">
+  </div>
+  <div class="field">
+    <label for="user_password">Password</label><br>
+    <input name="password" id="user_password" type="password">
+  </div>
+  <div class="actions">
+    <input name="commit" value="Log In" type="submit"> &nbsp;
+    <%=link_to 'Register', register_path%>
+  </div>
+</form>

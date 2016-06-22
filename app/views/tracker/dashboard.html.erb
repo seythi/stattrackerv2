@@ -1,0 +1,9 @@
+<h4>Hello <%=@cuser.username%></h4>
+<%= render 'printflashes' if !flash.empty? %>
+<%=link_to 'New Campaign', campaign_path%>
+<%@cuser.campaigns.each do |campaign|%>
+	<p><%=campaign.title%></p>
+<%end%>
+<%@cuser.pcs.each do |pc|%>
+	<p><%=pc.name%></p>
+<%end%>

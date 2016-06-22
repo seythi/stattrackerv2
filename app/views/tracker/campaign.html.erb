@@ -1,0 +1,16 @@
+<form action="/newcampaign" accept-charset="UTF-8" method="post">
+<input name="utf8" value="✓" type="hidden">
+<%=token_tag nil%>
+  <div class="field">
+    <label for="title">Title</label><br>
+    <input name="campaign[title]" id="campaign_title" type="text">
+  </div>
+  <div class="field">
+    <label for="campaign_password">Join Code</label><br>
+    <input name="campaign[password_digest]" id="campaign_password" type="text">
+  </div>
+  <div class="actions">
+    <input name="commit" value="Create campaign" type="submit"> &nbsp;
+    <%=link_to 'Log In', "/"%>
+  </div>
+</form>

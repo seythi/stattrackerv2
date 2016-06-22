@@ -1,0 +1,16 @@
+<form action="/newpc" accept-charset="UTF-8" method="post">
+<input name="utf8" value="✓" type="hidden">
+<%=token_tag nil%>
+  <div class="field">
+    <label for="title">Name</label><br>
+    <input name="pc[name]" id="pc_title" type="text">
+  </div>
+  <div class="field">
+    <label for="code">Join Code</label><br>
+    <input name="code" id="code" type="text">
+  </div>
+  <div class="actions">
+    <input name="commit" value="Create pc" type="submit"> &nbsp;
+    <%=link_to 'Log In', "/"%>
+  </div>
+</form>
