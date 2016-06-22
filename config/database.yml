@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: stattrackerv2_production
-  username: stattrackerv2
+  username: seythi
   password: <%= ENV['STATTRACKERV2_DATABASE_PASSWORD'] %>
